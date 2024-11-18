@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Форма ввода</title>
 </head>
 <body>
-<h1>test</h1>
-<p>текст</p>
+<h2>Форма ввода</h2>
+<form action="" method="post">
+    <div>
+        <label>
+            Ваше имя<input type="text" name="firstName" placeholder="Введите имя">
+        </label>
+    </div>
+    <div>
+        <label>
+            Ваш адрес<input type="text" name="surname" placeholder="Ваш адрес">
+        </label>
+    </div>
+    <div>
+        <label>
+            Производитель процессора<input type="checkbox" value="1" name="CPU">Apple
+        </label>
+        <label>
+            <input type="checkbox" value="2" name="CPU">AMD
+        </label>
+        <label>
+            <input type="checkbox" value="3" name="CPU">Intel
+        </label>
+    </div>
+    <div>
+        <label>
+            Способ оплаты <input checked type="radio" value="1" name="payment">СБП
+        </label>
+        <label>
+            <input type="radio" value="2" name="payment">банковская карта
+        </label>
+        <label>
+            <input type="radio" value="3" name="payment">наличные
+        </label>
+    </div>
+    <div>
+        <label>
+            Ваши пожелания <textarea name="message" placeholder="Введите сообщение"></textarea>
+        </label>
+    </div>
+    <div>
+        <label> Выберите город
+            <select name="city">
+                <option value="1">Москва</option>
+                <option value="2">Санкт-Петербург</option>
+                <option value="3">Новосибирск</option>
+                <option value="4">Омск</option>
+                <option value="5">Томск</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label> Выберите производителя
+            <select name="vendor" multiple>
+                <option value="1">ASUS</option>
+                <option value="2">Samsung</option>
+                <option value="3">HP</option>
+                <option value="4">HUAWEI</option>
+                <option value="5">Xiaomi</option>
+            </select>
+        </label>
+        <button type="submit" name="submit">Отправить</button>
+    </div>
+</form>
+<a href="computers.html">заказы</a>
 </body>
 </html>
