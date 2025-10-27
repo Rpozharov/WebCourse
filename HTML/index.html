@@ -9,14 +9,25 @@
 <form action="" method="post">
     <div>
         <label>
-            Ваше имя<input type="text" name="firstName" placeholder="Введите имя">
+            Имя <input type="text" name="firstName" placeholder="Введите имя">
         </label>
     </div>
+
+    <br>
     <div>
         <label>
-            Ваш адрес<input type="text" name="surname" placeholder="Ваш адрес">
+            Фамилия <input type="text" name="surname" placeholder="Введите фамилию">
         </label>
     </div>
+
+    <br>
+    <div>
+        <label>
+            Адрес <input type="text" name="address" placeholder="Ваш адрес">
+        </label>
+    </div>
+
+    <br>
     <div>
         <label>
             Производитель процессора<input type="checkbox" value="1" name="CPU">Apple
@@ -28,22 +39,28 @@
             <input type="checkbox" value="3" name="CPU">Intel
         </label>
     </div>
+
+    <br>
     <div>
         <label>
             Способ оплаты <input checked type="radio" value="1" name="payment">СБП
         </label>
         <label>
-            <input type="radio" value="2" name="payment">банковская карта
+            <input type="radio" value="2" name="payment">Банковская карта
         </label>
         <label>
-            <input type="radio" value="3" name="payment">наличные
+            <input type="radio" value="3" name="payment">Наличные
         </label>
     </div>
+
+    <br>
     <div>
         <label>
             Ваши пожелания <textarea name="message" placeholder="Введите сообщение"></textarea>
         </label>
     </div>
+
+    <br>
     <div>
         <label> Выберите город
             <select name="city">
@@ -55,6 +72,8 @@
             </select>
         </label>
     </div>
+
+    <br>
     <div>
         <label> Выберите производителя
             <select name="vendor" multiple>
@@ -65,9 +84,13 @@
                 <option value="5">Xiaomi</option>
             </select>
         </label>
-        <button type="submit" name="submit">Отправить</button>
     </div>
+
+    <br>
+    <button type="submit" name="submit">Отправить</button>
 </form>
-<a href="computers.html">заказы</a>
+
+<br>
+<a href="computers.html">Заказы</a>
 </body>
 </html>
