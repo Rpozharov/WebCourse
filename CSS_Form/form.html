@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style_form.css">
+</head>
+<body>
+<div class="parent_block">
+    <div class="form_block">
+        <form action="" method="post">
+            <div class="top_form_block">Отправить заявку</div>
+
+            <label for="name" class="label_name_block">Ваше имя</label>
+            <input class="field tooltip" type="text" id="name" name="name" placeholder="Ваше имя *">
+
+            <label for="phone" class="label_block">Ваш номер телефона</label>
+            <input class="field tooltip" type="text" id="phone" name="phone" placeholder="Ваш номер телефона *">
+
+            <label for="email" class="label_block">Ваш email или VK</label>
+            <input class="field tooltip" type="text" id="email" name="email" placeholder="Ваш email или VK *">
+
+            <label for="comment" class="label_block">Комментарий</label>
+            <textarea class="field comment_block tooltip" id="comment" name="comment "
+                      placeholder="Комментарий (не обязательно)"></textarea>
+
+            <div class="label_block bottom_form_block">Заполните и отправьте форму, и мы перезвоним Вам по указанному
+                номеру
+            </div>
+
+            <button class="click" type="submit" name="submit">Отправить заявку</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
